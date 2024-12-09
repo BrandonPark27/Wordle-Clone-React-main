@@ -61,7 +61,7 @@ function App() {
     if (currAttempt.letter > 4) return;
     const newBoard = [...board];
     newBoard[currAttempt.attempt][currAttempt.letter] = key;
-    setBoard(newBoard);
+    setBoard(newBoard); 
     setCurrAttempt({
       attempt: currAttempt.attempt,
       letter: currAttempt.letter + 1,
